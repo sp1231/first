@@ -1,0 +1,44 @@
+body {
+	background-color: green;
+
+}
+
+.container-1, .container-3{
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	animation-name: myanimation1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.container-2,.container-4 {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	animation-name: myanimation2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.box-1 {
+	margin: 10px 10px;
+	width: 360px;
+	height: 180px;
+	font-size: 2em;
+	text-align: center;
+	position: relative;
+	background-color: white; 
+}
+
+@keyframes myanimation1{
+	0%  {left: 0px;}
+	50% {left:200px;}
+	100% {left:0px; }
+}
+
+@keyframes myanimation2{
+	0%  {right: 0px;}
+	50% {right:200px;}
+	100% {right:0px; }
+}
